@@ -74,8 +74,7 @@ NEXT_PUBLIC_SUPABASE_URL=your_url
 👉 In production (Vercel), add these in Environment Variables settings
 
 🚀 Installation & Setup
-git clone https://github.com/your-username/resume-optimizer-ai.git
-cd resume-optimizer-ai
+git clone https://github.com/RiteshRajpal/Resume-Optimizer-AI
 npm install
 npm run dev
 💼 Why This Project Stands Out
