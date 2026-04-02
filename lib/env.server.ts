@@ -63,9 +63,5 @@ export function hasAnyLlmApiKey(): boolean {
 
 /** True when /api/optimize is allowed to run (LLM keys and/or demo paths). */
 export function canRunOptimize(): boolean {
-  return (
-    isExplicitDemoOptimize() ||
-    isAutoDemoFallbackEnabled() ||
-    hasAnyLlmApiKey()
-  );
+  return hasAnyLlmApiKey() || isExplicitDemoOptimize();
 }
