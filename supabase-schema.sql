@@ -1,4 +1,4 @@
--- ═══════════════════════════════════════════════════════════════
+
 --  AI Resume Editor — Supabase Schema
 --  Run this in your Supabase project's SQL Editor
 -- ═══════════════════════════════════════════════════════════════
