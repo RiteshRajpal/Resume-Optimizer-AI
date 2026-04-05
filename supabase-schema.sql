@@ -1,7 +1,6 @@
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
--- ─── Users table (extends Supabase auth.users) ────────────────
 CREATE TABLE IF NOT EXISTS public.profiles (
   id          UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   email       TEXT,
