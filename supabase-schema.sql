@@ -24,7 +24,7 @@ CREATE TRIGGER on_auth_user_created
   AFTER INSERT ON auth.users
   FOR EACH ROW EXECUTE FUNCTION public.handle_new_user();
 
--- ─── Resumes table ────────────────────────────────────────────
+
 CREATE TABLE IF NOT EXISTS public.resumes (
   id                    UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id               UUID REFERENCES public.profiles(id) ON DELETE SET NULL,
