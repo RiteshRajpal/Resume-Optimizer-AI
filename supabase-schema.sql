@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS public.resumes (
 
   keyword_score         SMALLINT CHECK (keyword_score >= 0 AND keyword_score <= 100),
   
-  -- Timestamps
+
   created_at            TIMESTAMPTZ DEFAULT NOW(),
   updated_at            TIMESTAMPTZ DEFAULT NOW()
 );
