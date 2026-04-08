@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS public.resumes (
   edited_resume_text    TEXT,
   job_description       TEXT NOT NULL,
   
-  -- Metrics
+
   keyword_score         SMALLINT CHECK (keyword_score >= 0 AND keyword_score <= 100),
   
   -- Timestamps
