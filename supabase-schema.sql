@@ -59,7 +59,7 @@ CREATE TRIGGER resumes_updated_at
   BEFORE UPDATE ON public.resumes
   FOR EACH ROW EXECUTE FUNCTION update_updated_at();
 
--- ─── Indexes ──────────────────────────────────────────────────
+
 CREATE INDEX IF NOT EXISTS idx_resumes_user_id ON public.resumes(user_id);
 CREATE INDEX IF NOT EXISTS idx_resumes_created_at ON public.resumes(created_at DESC);
 
