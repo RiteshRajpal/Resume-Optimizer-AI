@@ -63,7 +63,7 @@ CREATE TRIGGER resumes_updated_at
 CREATE INDEX IF NOT EXISTS idx_resumes_user_id ON public.resumes(user_id);
 CREATE INDEX IF NOT EXISTS idx_resumes_created_at ON public.resumes(created_at DESC);
 
--- ─── RLS Policies ─────────────────────────────────────────────
+
 ALTER TABLE public.resumes ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 
