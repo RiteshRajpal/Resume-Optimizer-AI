@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS public.resumes (
   file_name             TEXT,
   file_url              TEXT,
   
-  -- Content
+
   original_resume_text  TEXT NOT NULL,
   edited_resume_text    TEXT,
   job_description       TEXT NOT NULL,
