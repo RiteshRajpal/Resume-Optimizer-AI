@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS public.resumes (
   id                    UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id               UUID REFERENCES public.profiles(id) ON DELETE SET NULL,
   
-  -- File metadata
+
   file_name             TEXT,
   file_url              TEXT,
   
