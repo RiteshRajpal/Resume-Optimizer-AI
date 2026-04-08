@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS public.resumes (
   updated_at            TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Updated_at trigger
+
 CREATE OR REPLACE FUNCTION update_updated_at()
 RETURNS TRIGGER AS $$
 BEGIN
