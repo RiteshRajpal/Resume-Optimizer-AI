@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS public.profiles (
   created_at  TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Auto-create profile on signup
+
 CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS TRIGGER AS $$
 BEGIN
