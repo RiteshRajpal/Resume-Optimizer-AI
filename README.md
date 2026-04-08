@@ -8,7 +8,7 @@ An AI-powered web application that transforms generic resumes into job-specific,
 
 👉 Try it here
 
-https://resume-optimizer-ai-8x1o-jy5h56w0g-riteshrajpals-projects.vercel.app/
+https://resume-optimizer-ai-ao7z-18p7pfqcs-riteshrajpals-projects.vercel.app/
 
 🧠 Problem Statement
 
