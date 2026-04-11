@@ -93,7 +93,7 @@ CREATE POLICY "Users can delete own resumes"
   ON public.resumes FOR DELETE
   USING (auth.uid() = user_id);
 
--- Service role can do everything (for API routes)
+
 CREATE POLICY "Service role has full access to resumes"
   ON public.resumes
   USING (auth.role() = 'service_role');
