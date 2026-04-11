@@ -67,7 +67,7 @@ CREATE INDEX IF NOT EXISTS idx_resumes_created_at ON public.resumes(created_at D
 ALTER TABLE public.resumes ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 
--- Profiles: users can read/update their own profile
+
 CREATE POLICY "Users can view own profile"
   ON public.profiles FOR SELECT
   USING (auth.uid() = id);
