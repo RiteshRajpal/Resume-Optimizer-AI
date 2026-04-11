@@ -76,7 +76,7 @@ CREATE POLICY "Users can update own profile"
   ON public.profiles FOR UPDATE
   USING (auth.uid() = id);
 
--- Resumes: users can CRUD their own resumes
+
 CREATE POLICY "Users can view own resumes"
   ON public.resumes FOR SELECT
   USING (auth.uid() = user_id OR user_id IS NULL);
