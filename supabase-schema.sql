@@ -109,7 +109,7 @@ VALUES (
   'resume-files',
   'resume-files',
   false,
-  10485760, -- 10MB
+  10485760, 
   ARRAY['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/msword']
 )
 ON CONFLICT (id) DO NOTHING;
