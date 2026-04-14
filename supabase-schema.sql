@@ -102,7 +102,7 @@ CREATE POLICY "Service role has full access to profiles"
   ON public.profiles
   USING (auth.role() = 'service_role');
 
--- ─── Storage Bucket ───────────────────────────────────────────
+
 -- Run this to create the storage bucket:
 INSERT INTO storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
 VALUES (
