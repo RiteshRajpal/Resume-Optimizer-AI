@@ -114,7 +114,7 @@ VALUES (
 )
 ON CONFLICT (id) DO NOTHING;
 
--- Storage policies
+
 CREATE POLICY "Authenticated users can upload resume files"
   ON storage.objects FOR INSERT
   TO authenticated
