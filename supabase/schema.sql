@@ -7,7 +7,7 @@
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 -- ── Users (mirrors Supabase Auth) ────────────────────────────────────────────
--- Note: Supabase Auth already creates auth.users
+
 -- This table is for additional profile data (optional)
 CREATE TABLE IF NOT EXISTS public.profiles (
   id          UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
