@@ -1,5 +1,4 @@
 
--- Run this in: Supabase Dashboard → SQL Editor → New Query
 -- ─────────────────────────────────────────────────────────────────────────────
 
 -- Enable UUID extension
