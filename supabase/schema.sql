@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS public.profiles (
 CREATE TABLE IF NOT EXISTS public.resumes (
   id                   UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id              UUID REFERENCES auth.users(id) ON DELETE SET NULL,
-  -- Session identifier for unauthenticated users
+
   session_id           TEXT,
   -- Content
   original_resume_text TEXT NOT NULL,
