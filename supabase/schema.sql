@@ -2,8 +2,6 @@
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 
-
-
 CREATE TABLE IF NOT EXISTS public.profiles (
   id          UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   email       TEXT,
@@ -11,7 +9,6 @@ CREATE TABLE IF NOT EXISTS public.profiles (
   created_at  TIMESTAMPTZ DEFAULT NOW()
 );
 
--- ── Resumes ───────────────────────────────────────────────────────────────────
 CREATE TABLE IF NOT EXISTS public.resumes (
   id                   UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id              UUID REFERENCES auth.users(id) ON DELETE SET NULL,
