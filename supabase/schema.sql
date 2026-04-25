@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS public.resumes (
   original_resume_text TEXT NOT NULL,
   edited_resume_text   TEXT NOT NULL,
   job_description      TEXT NOT NULL,
-  -- Metadata
+
   file_name            TEXT,
   file_url             TEXT,          -- Supabase Storage URL
   ats_score            INTEGER,       -- 0–100 keyword match score
