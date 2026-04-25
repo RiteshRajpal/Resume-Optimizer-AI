@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS public.resumes (
   user_id              UUID REFERENCES auth.users(id) ON DELETE SET NULL,
 
   session_id           TEXT,
-  -- Content
+ 
   original_resume_text TEXT NOT NULL,
   edited_resume_text   TEXT NOT NULL,
   job_description      TEXT NOT NULL,
