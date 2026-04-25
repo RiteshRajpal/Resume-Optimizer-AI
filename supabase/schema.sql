@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS public.resumes (
 
   file_name            TEXT,
   file_url             TEXT,         
-  ats_score            INTEGER,       -- 0–100 keyword match score
+  ats_score            INTEGER,      
   word_count_original  INTEGER,
   word_count_edited    INTEGER,
   -- Timestamps
