@@ -1,7 +1,7 @@
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
--- ── Users (mirrors Supabase Auth) ────────────────────────────────────────────
+
 
 
 CREATE TABLE IF NOT EXISTS public.profiles (
